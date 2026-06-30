@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/background_running_beyond8"
-    android:padding="12dp">
+    android:padding="16dp"
+    android:background="#000000">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="24dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -23,20 +23,21 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/txtKm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0.00"
-                android:textColor="#000000"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="KILÔMETROS"
-                android:textColor="#444444"
-                android:textSize="9sp"
-                android:textStyle="bold" />
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#808080"/>
 
         </LinearLayout>
 
@@ -48,31 +49,43 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/txtTempo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="00:00"
-                android:textColor="#000000"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TEMPO"
-                android:textColor="#444444"
-                android:textSize="9sp"
-                android:textStyle="bold" />
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#808080"/>
+
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnPlay"
-        android:layout_width="120dp"
-        android:layout_height="36dp"
-        android:backgroundTint="#FF6B00"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
         android:text="COMEÇAR"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:textStyle="bold" />
+        android:backgroundTint="#FF6B00"/>
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="PERFIL"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"/>
 
 </LinearLayout>
