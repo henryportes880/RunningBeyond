@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000"
     tools:context=".presentation.PerfilActivity">
+
 
     <TextView
         android:id="@+id/textViewPerfil"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Tela de Perfil"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PERFIL"
+        android:textColor="#FF6B00"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome: Henry"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"/>
+
+
+    <TextView
+        android:id="@+id/txtCorridas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corridas: 15"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"/>
+
+
+    <TextView
+        android:id="@+id/txtDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distância: 120 km"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"/>
+
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="VOLTAR"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FF6B00"/>
 
 
 </LinearLayout>

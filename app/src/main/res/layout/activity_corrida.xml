@@ -4,33 +4,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center"
+    android:background="#000000">
+
 
     <TextView
-        android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Running Beyond"
+        android:text="CORRIDA"
+        android:textColor="#FF6B00"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="20dp"/>
+        android:textStyle="bold"/>
 
 
     <Button
-        android:id="@+id/btnComecar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnIniciar"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="Começar"
-        android:layout_marginBottom="12dp"/>
+        android:text="INICIAR"
+        android:layout_marginTop="15dp"/>
 
 
     <Button
-        android:id="@+id/btnPerfil"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnVoltar"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="Perfil"/>
-
+        android:text="VOLTAR"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
