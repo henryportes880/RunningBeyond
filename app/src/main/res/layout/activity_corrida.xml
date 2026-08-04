@@ -1,36 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#000000"
     android:gravity="center"
-    android:background="#000000">
-
+    android:orientation="vertical"
+    android:padding="8dp">
 
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CORRIDA"
-        android:textColor="#FF6B00"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:layout_marginBottom="2dp"
+        android:letterSpacing="0.08"
+        android:text="RUNNING BEYOND"
+        android:textColor="#26E07F"
+        android:textSize="10sp"
+        android:textStyle="bold" />
 
-
-    <Button
-        android:id="@+id/btnIniciar"
-        android:layout_width="120dp"
+    <TextView
+        android:id="@+id/tvTimerCorrida"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INICIAR"
-        android:layout_marginTop="15dp"/>
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
-
-    <Button
-        android:id="@+id/btnVoltar"
-        android:layout_width="120dp"
+    <TextView
+        android:id="@+id/tvDistanciaCorrida"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="VOLTAR"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginBottom="8dp"
+        android:text="0.00 km"
+        android:textColor="#26E07F"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnIniciar"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_play"
+                android:backgroundTint="@null"
+                android:text="INICIAR"
+                android:textColor="#000000"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_stop"
+                android:backgroundTint="@null"
+                android:text="STOP"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/bg_secondary"
+            android:backgroundTint="@null"
+            android:text="VOLTAR"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </LinearLayout>

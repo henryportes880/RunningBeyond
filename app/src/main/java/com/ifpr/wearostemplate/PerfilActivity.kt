@@ -8,7 +8,8 @@ class PerfilActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+
+        setContentView(R.layout.activity_perfil)
 
         val btnVoltar = findViewById<Button>(R.id.btnVoltar)
 
